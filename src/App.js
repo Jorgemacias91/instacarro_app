@@ -1,6 +1,6 @@
 import './App.css';
-import NavBar from './components/navBar.jsx'
-import Cart from './components/cards.jsx'
+import NavBar from './Components/NavBar/navBar.jsx'
+import Cart from './Components/Car/cards.jsx'
 
 function App() {
   return (

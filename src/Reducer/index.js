@@ -1,5 +1,5 @@
 const initialState = {
-    dataCar = []
+    dataCar : []
 
 
 }

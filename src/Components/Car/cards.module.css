@@ -1,0 +1,32 @@
+.container{
+    width: 90%;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container .card{
+    width: 30%;
+    height: 430px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin:20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+}
+
+
+.container .card .imagen{
+    width: 430px;
+    height: 220px;
+}
+
+.timeOfert{
+    display: flex;
+    justify-content: space-around;
+    
+}
