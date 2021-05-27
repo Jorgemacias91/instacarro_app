@@ -1,3 +1,40 @@
-.navColor{
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
     background-color: white;
+    align-items: center;
+}
+
+.logo{
+    width: 30%;
+}
+
+.phone{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.user{
+    display: flex;
+    width: 30%;
+    margin-top: 1%;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+}
+
+.imageCaret{
+    width: 10px;
+    height: 10px;
+    margin-right: 2%;
+}
+
+.userTest{
+    width: 50%;
 }
