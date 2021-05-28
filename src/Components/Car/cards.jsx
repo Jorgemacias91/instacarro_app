@@ -4,16 +4,17 @@ import getData from '../../Actions/getData';
 import style from './cards.module.css';
 import CountDownTimer from '../CountDown/countdown';
 import {Link} from 'react-router-dom'
+import Contador from '../../Actions/contador'
 
 export default function Cart(){
 
     const dataCar = useSelector(state => state.dataCar)
-    const dispath = useDispatch();
-    const hoursMinSecs = {hours:1, minutes: 20, seconds: 40}
+    const dispatch = useDispatch();
 
    useEffect(() => {
-    dispath(getData())
+    dispatch(getData());
    },[])
+
 
     return (
         <div className={style.movil}>
@@ -30,11 +31,13 @@ export default function Cart(){
             <div className={style.timeOfert}>
                 <div>
                     <p className={style.text}>TEMPO RESTANTE</p>
-                    <h3 className={style.timeCor}><CountDownTimer hoursMinSecs={hoursMinSecs}/></h3>
+                    <h3 className={style.timeCor}><CountDownTimer
+                      hoursMinSecs={new Date(Date.now() + elem.remainingTime)}
+                    /></h3>
                 </div>
                 <div>
                     <p className={style.text}>ULTIMA OFERTA</p>
-                    <h3 className={style.ofertCor}>R${elem.bids[0] && elem.bids[0].amount}</h3>
+                    <h3 className={style.ofertCor}>{elem.bids[elem.bids.length -1] && elem.bids[elem.bids.length -1].amount}</h3>
                 </div>
             </div>
             <hr className={style.line}></hr>
@@ -52,7 +55,7 @@ export default function Cart(){
             </div>
             <div className={style.divBtn}>
             <hr className={style.line}></hr>
-            <button className={style.btn}>Ofertar</button>
+            <button className={style.btn} >Ofertar</button>
             </div>
             
           </div>

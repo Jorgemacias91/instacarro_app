@@ -7,7 +7,7 @@
     padding-left: 5%;
     padding-right: 5%;
 }
-.container .card{
+.card{
     width: 30%;
     height: 455px;
     border-radius:5px;
@@ -20,7 +20,7 @@
 }
 
 
-.container .card .imagen{
+.card .imagen{
     width: 430px;
     height: 220px;
 }

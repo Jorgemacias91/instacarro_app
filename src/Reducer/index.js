@@ -1,5 +1,6 @@
 const initialState = {
-    dataCar : []
+    dataCar : [],
+
 
 
 }
@@ -13,6 +14,8 @@ function rootReducer(state = initialState, action) {
             return {
                 dataCar: action.payload,   
             }
+        case "CONTADOR" :
+            return "mas"
         default:
             return state
     }
