@@ -10,10 +10,10 @@ export default function NavBar() {
         //estrutura para nabvar
         <nav className={style.navbar}>
             <div className={style.logo}>
-                <img src={logo} alt="instacarro_Logo" />
+                <img className={style.imageLogo} src={logo} alt="instacarro_Logo" />
             </div>
             <div className={style.phone}>
-                <img className={style.image} src={phone} alt="icono_telefono" />
+               <img className={style.image} src={phone} alt="icono_telefono" /> 
                 <p>(11) 3569 - 3465</p>
             </div>
             <div className={style.user}>
