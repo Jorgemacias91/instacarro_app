@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/instacarro_app/static/css/main.48145a0f.chunk.css",
+    "main.css": "/instacarro_app/static/css/main.a73eb4da.chunk.css",
     "main.js": "/instacarro_app/static/js/main.3a9e02b6.chunk.js",
     "main.js.map": "/instacarro_app/static/js/main.3a9e02b6.chunk.js.map",
     "runtime-main.js": "/instacarro_app/static/js/runtime-main.82258d22.js",
@@ -8,13 +8,13 @@
     "static/js/2.abaad22a.chunk.js": "/instacarro_app/static/js/2.abaad22a.chunk.js",
     "static/js/2.abaad22a.chunk.js.map": "/instacarro_app/static/js/2.abaad22a.chunk.js.map",
     "index.html": "/instacarro_app/index.html",
-    "static/css/main.48145a0f.chunk.css.map": "/instacarro_app/static/css/main.48145a0f.chunk.css.map",
+    "static/css/main.a73eb4da.chunk.css.map": "/instacarro_app/static/css/main.a73eb4da.chunk.css.map",
     "static/js/2.abaad22a.chunk.js.LICENSE.txt": "/instacarro_app/static/js/2.abaad22a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.82258d22.js",
     "static/js/2.abaad22a.chunk.js",
-    "static/css/main.48145a0f.chunk.css",
+    "static/css/main.a73eb4da.chunk.css",
     "static/js/main.3a9e02b6.chunk.js"
   ]
 }
