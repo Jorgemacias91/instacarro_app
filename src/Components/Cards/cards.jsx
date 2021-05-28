@@ -1,27 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import getData from '../../Actions/getData';
-import Card from '../Card/card.jsx'
-import style from './cards.module.css'
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import getData from "../../Actions/getData";
+import Card from "../Card/card.jsx";
+import style from "./cards.module.css";
 
-export default function Cards(){
-
-    const dataCar = useSelector(state => state.dataCar)
+export default function Cards() {
+    //os dados armazenados no estado redux são obtidos
+    const dataCar = useSelector((state) => state.dataCar);
     const dispatch = useDispatch();
-
-    const [value, setValue] = useState();
-
-   useEffect(() => {
-    dispatch(getData());
-   },[])
-
+    //passamos a ter nossa ação ativa toda vez que o site é reiniciado
+    useEffect(() => {
+        dispatch(getData());
+    }, [dispatch]);
 
     return (
+        //os dados são mapeados
         <div className={style.container}>
-            {dataCar && dataCar.map((elem)=>{
-                <Card props = {elem}/> }
-                )
-            }
+            {dataCar && dataCar.map((elem) => <Card props={elem} />)}
         </div>
-    )
+    );
 }

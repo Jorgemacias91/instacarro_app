@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+//ação que permite trazer os dados da API
 export default function getData() {
     return  function (dispatch) {
         return axios

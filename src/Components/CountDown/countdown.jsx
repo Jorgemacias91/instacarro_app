@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import style from "./countdown.module.css";
 
-const CountDownTimer = (hoursMinSecs) => {
-    /*    const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;*/
+
+export default function CountDownTimer(hoursMinSecs) {
+
     const hours = hoursMinSecs.hoursMinSecs.getHours();
     const minutes = hoursMinSecs.hoursMinSecs.getMinutes();
     const seconds = hoursMinSecs.hoursMinSecs.getSeconds();
-    /*    console.log(hoursMinSecs);*/
-    const [[hrs, mins, secs], setTime] = React.useState([
+    // o estado local é criado para o tempo
+    const [[hrs, mins, secs], setTime] = useState([
         hours,
         minutes,
         seconds,
@@ -27,7 +28,7 @@ const CountDownTimer = (hoursMinSecs) => {
     const reset = () =>
         setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const timerId = setInterval(() => tick(), 1000);
         return () => clearInterval(timerId);
     });
@@ -41,4 +42,3 @@ const CountDownTimer = (hoursMinSecs) => {
     );
 };
 
-export default CountDownTimer;
