@@ -5,7 +5,7 @@ const initialState = {
 function rootReducer(state = initialState, action) {
     switch (action.type) {
         case "GET_DATA":
-            //Ordeno el array de menor a mayor tiempo remanente
+            //Eu ordeno o array do menor para o maior tempo restante
             const arrayOrdenado = action.payload.sort((a, b) =>
                 a.remainingTime > b.remainingTime
                     ? 1

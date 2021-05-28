@@ -1,9 +1,11 @@
+
 .container{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    height: 600px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-around;
-    padding : 5%;
-    padding-top: 1%;
+    align-items: center;
 }
